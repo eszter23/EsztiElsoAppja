@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EsztiElsoAppja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eszti" translatesAutoresizingMaskIntoConstraints="NO" id="Shc-Ya-hBo">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❤️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-MU-WHa">
+                                <rect key="frame" x="142.5" y="577" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="VWk-n0-9mX"/>
+                                    <constraint firstAttribute="width" constant="90" id="vn2-6Q-DKW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl7-69-cHJ">
+                                <rect key="frame" x="142.5" y="577" width="90" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Gombocka">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="gombockatMegnyomtak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HxO-8N-mox"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Ok-MU-WHa" firstAttribute="leading" secondItem="Xl7-69-cHJ" secondAttribute="leading" id="5Hy-NM-HPW"/>
+                            <constraint firstItem="Shc-Ya-hBo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Yd-le-8bq"/>
+                            <constraint firstItem="Shc-Ya-hBo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5dd-SF-Y2e"/>
+                            <constraint firstItem="9Ok-MU-WHa" firstAttribute="top" secondItem="Xl7-69-cHJ" secondAttribute="top" id="6vA-Rl-9fl"/>
+                            <constraint firstItem="9Ok-MU-WHa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FfJ-D6-JAq"/>
+                            <constraint firstItem="Shc-Ya-hBo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="KPv-Vf-3kV"/>
+                            <constraint firstItem="9Ok-MU-WHa" firstAttribute="trailing" secondItem="Xl7-69-cHJ" secondAttribute="trailing" id="LeA-wl-LKI"/>
+                            <constraint firstItem="Shc-Ya-hBo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ocy-Bl-xuT"/>
+                            <constraint firstItem="9Ok-MU-WHa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kCS-4d-CIC"/>
+                            <constraint firstItem="9Ok-MU-WHa" firstAttribute="bottom" secondItem="Xl7-69-cHJ" secondAttribute="bottom" id="rRS-TS-TJd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="kep" destination="Shc-Ya-hBo" id="WmA-Sn-kbd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eszti" width="768" height="1024"/>
+    </resources>
+</document>
